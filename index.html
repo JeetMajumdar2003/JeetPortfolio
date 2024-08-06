@@ -3,269 +3,208 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeet's Protfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Jeet's Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/f9e2495ded.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-white">
-    <header>
-        <!-- Navber goes here -->
-        <nav class="w-full h-20 bg-white flex justify-between px-4 items-center md:px-4 fixed">
-            <div class="cursor-pointer hover:text-sky-500 flex flex-wrap flex-row items-center text-center">
-                <div class="w-12">
-                    <img class="rounded-full" src="IMG_20221205_132319-removebg-preview.jpg" alt="">
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <nav>
+            <div class="navber">
+                <div class="logo">
+                    <img src="Images\logo.jpg" alt="" id="logo">
+                    <span>JEET MAJMDAR</span>
                 </div>
-                <span class="flex flex-row font-semibold p-4">JEET MAJUMDAR</span>
-            </div>
-            <ul class="hidden md:flex font-semibold">
-                <li><a class="mx-[10px] cursor-pointer hover:text-sky-500" href="#">HOME</a></li>
-                <li><a class="mx-[10px] cursor-pointer hover:text-sky-500" href="./#about">ABOUT</a></li>
-                <li><a class="mx-[10px] cursor-pointer hover:text-sky-500" href="./#projects">PROJECTS</a></li>
-                <li><a class="mx-[10px] cursor-pointer hover:text-sky-500" href="./#contact">CONTACT</a></li>
-            </ul>
-            <div
-                class="hidden md:block px-3 py-2 bg-sky-500 rounded-md text-white font-semibold hover:text-sky-700 hover:bg-sky-300">
-                <button>Login / Register</button>
-            </div>
-            <div class="md:hidden">
-                <a class="text-5xl" href="#">&#8801</a>
+                <!-- Navigation -->
+                <div id="nav">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </div>
+                <!-- Navigation End -->
             </div>
         </nav>
-        <!-- Navber ends here -->
-    </header>
-
-    <!-- HOME section goes here -->
-    <section class="bg-sky-500 h-[600px]">
-        <div class="p-40 flex flex-wrap flex-col items-center text-center">
-            <h1 class="text-white font-bold text-3xl md:text-5xl text-center">HEY, MY NAME IS JEET MAJUMDAR</h1>
-            <p class="p-12 text-lg text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium ducimus tempora reiciendis, ipsam totam veritatis in! Doloribus mollitia ducimus nulla
-                tenetur culpa, nemo autem sed consectetur aliquid officiis quod cum.</p>
-            <a class="bg-white font-bold p-4 rounded-lg" href="./#about">ABOUT</a>
-        </div>
-    </section>
-    <!-- HOME section ends here -->
-
-    <!-- About section goes here -->
-    <section id="about" class="bg-slate-100 h-auto flex flex-wrap flex-col items-center justify-items-center">
-        <div class="px-48 flex flex-wrap flex-col items-center text-center">
-            <h1 class="font-bold text-2xl md:text-4xl text-center mt-4">ABOUT</h1>
-            <span class="w-12 h-1 border-b-4 border-sky-500 rounded-lg my-4"></span>
-            <span class="px-56 text-slate-500 font-semibold pb-32">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-                tempora explicabo quae quod deserunt eius sapiente
-            </span>
-        </div>
-
-        <div class="flex flex-col md:flex-row justify-center w-[90%]">
-            <div class="flex flex-col flex-wrap justify-start px-12 w-[45%]">
-                <h3 class="font-bold text-2xl">Get to know me!</h3>
-                <div class="">
-                    <p class="py-8 text-slate-600">
-                        Hey! It's
-                        <strong>Jeet Majumdar</strong>
-                        and I'm a <strong> Frontend Web Developer </strong> located in
-                        Kolkata. I've done
-                        <strong> remote </strong>
-                        projects for agencies, consulted for startups, and collaborated
-                        with talented people to create
-                        <strong>digital products </strong>
-                        for both business and consumer use.
-                    </p>
-                    <p class="text-slate-600">
-                        I'm a bit of a digital product junky. Over the years, I've used
-                        hundreds of web and mobile apps in different industries and
-                        verticals. Feel free to
-                        <strong>contact</strong> me here.
-                    </p>
-                </div>
-                <span class="my-12"><a href="./#contact"
-                        class="bg-sky-500 text-white font-bold p-4 rounded-lg">Contact</a></span>
+        <!-- Home -->
+        <div class="home">
+            <div class="header-text">
+                <h1>Hi, I'm <span>Jeet</span> Majmdar from <span>INDIA</span></h1>
+                <p> Frontend Web Developer || Web Design || Data Science Enthusiast || AI & ML</p>
+                <button><a href="#about">About Me</a></button>
             </div>
+            <!-- <div class="header-image">
+                <img src="Images\logo.jpg" alt="">
+            </div> -->
+        </div>
+        <!-- Home End -->
+    </div>
+    <!-- Header Section End -->
 
-
-            <div class="flex flex-col flex-wrap justify-start px-12 w-[45%]">
-                <h3 class="font-bold text-2xl">My Skills</h3>
-                <div class="flex flex-row flex-wrap mt-8">
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">HTML</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">CSS</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">JavaScript</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">React</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">SASS</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">GIT</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">Shopify</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">Wordpress</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">Google ADS</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">Facebook Ads</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">Android</div>
-                    <div class="bg-slate-300 text-slate-500 font-bold m-2 p-2 rounded-lg">IOS</div>
+    <!-- About Section -->
+    <div id="about">
+        <h1>About Me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/logo.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <p>Hey! It's <span>Jeet Majumdar</span> and I'm a <span>Frontend Web Developer</span> located in Kolkata. I've done remote
+                        projects for agencies, consulted for startups, and collaborated with talented people to create
+                        digital products for both business and consumer use.
+                        <br>
+                        I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps
+                        in different industries and verticals. Feel free to contact me here.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contants active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Websites, Web App Development, PWA etc.</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contants" id="experience">
+                        <ul>
+                            <li><span>2023-Present</span><br>IBM Cloud/AI Intern</li>
+                            <li><span>2023</span><br>IBM AI Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contants" id="education">
+                        <ul>
+                            <li><span>2022-Present</span><br>BE in Chemical Engineerong from JU</li>
+                            <li><span>2019-2021</span><br>12th from DKCRV</li>
+                        </ul>
+                    </div>
+                    <button><a href="#contact">Contact Me</a></button>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- About section ends here -->
+    </div>
+    <!-- About Section End -->
 
-    <!-- PROJECTS section goes here -->
-    <section id="projects" class="bg-slate-200 h-auto">
-        <div class="px-48 flex flex-wrap flex-col items-center text-center">
-            <h1 class="font-bold text-2xl md:text-4xl text-center mt-4">PROJECTS</h1>
-            <span class="w-12 h-1 border-b-4 border-sky-500 rounded-lg my-4"></span>
-            <span class="px-56 text-slate-500 font-semibold pb-32">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-                tempora explicabo quae quod deserunt eius sapiente
-            </span>
-
-
-            <div class="flex flex-col flex-wrap content-center">
-                <div class="pb-12 flex flex-col md:flex-row justify-between">
-                    <div class="w-[900px] flex flex-row justify-between">
-                        <img src="https://dopefolio.netlify.app/assets/jpeg/project-mockup-example.jpeg"
-                            alt="Software Screenshot" class="" loading="lazy">
-                    </div>
-                    <div class="m-8 flex flex-row flex-wrap justify-between">
-                        <h3 class="font-bold text-2xl">Project 1</h3>
-                        <p class="my-4 text-lg text-slate-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                            facilis tempora, explicabo quae quod deserunt eius sapiente
-                            praesentium.
-                        </p>
-                        <a href="./#projects" class="bg-sky-500 text-white font-bold  p-4 rounded-lg"
-                            target="_blank">Case
-                            Study</a>
-                    </div>
+    <!-- Services Section -->
+    <div id="services">
+        <h1>My Services</h1>
+        <div class="container">
+            <div class="services-list">
+                <div class="services-col">
+                    <img src="Images\service1.jpg" alt="">
+                    <h3>Web Development</h3>
+                    <p>Web Development is the work involved in developing a Web site for the Internet or an intranet.
+                        Web development can range from developing a simple single static page of plain text to complex
+                        Web-based Internet applications, electronic businesses, and social network services.</p>
+                    <a href="#">Learn More</a>
                 </div>
-
-                <div class="flex flex-col flex-wrap content-center">
-                    <div class="pb-12 flex flex-col md:flex-row justify-between">
-                        <div class="w-[900px] flex flex-row justify-between">
-                            <img src="https://dopefolio.netlify.app/assets/jpeg/project-mockup-example.jpeg"
-                                alt="Software Screenshot" class="" loading="lazy">
-                        </div>
-                        <div class="m-8 flex flex-row flex-wrap justify-between">
-                            <h3 class="font-bold text-2xl">Project 2</h3>
-                            <p class="my-4 text-lg text-slate-600">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                                facilis tempora, explicabo quae quod deserunt eius sapiente
-                                praesentium.
-                            </p>
-                            <a href="./#projects" class="bg-sky-500 text-white font-bold  p-4 rounded-lg"
-                                target="_blank">Case
-                                Study</a>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col flex-wrap content-center">
-                        <div class="pb-12 flex flex-col md:flex-row justify-between">
-                            <div class="w-[900px] flex flex-row justify-between">
-                                <img src="https://dopefolio.netlify.app/assets/jpeg/project-mockup-example.jpeg"
-                                    alt="Software Screenshot" class="" loading="lazy">
-                            </div>
-                            <div class="m-8 flex flex-row flex-wrap justify-between">
-                                <h3 class="font-bold text-2xl">Project 3</h3>
-                                <p class="my-4 text-lg text-slate-600">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                                    facilis tempora, explicabo quae quod deserunt eius sapiente
-                                    praesentium.
-                                </p>
-                                <a href="./#projects" class="bg-sky-500 text-white font-bold  p-4 rounded-lg"
-                                    target="_blank">Case
-                                    Study</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="services-col">
+                    <img src="Images\service2.jpg" alt="">
+                    <h3>App Development</h3>
+                    <p>Mobile app development is the act or process by which a mobile app is developed for mobile
+                        devices, such as personal digital assistants, enterprise digital assistants or mobile phones.
+                        These applications can be pre-installed on phones during manufacturing platforms, or delivered
+                        as web applications using server-side or client-side processing to provide an "application-like"
+                        experience within a Web browser.</p>
+                    <a href="#">Learn More</a>
                 </div>
-    </section>
-    <!-- PROJECTS section ends here -->
-
-    <!-- CONTACT section goes here -->
-    <section id="contact" class="bg-sky-500 h-auto">
-        <div class="flex flex-col items-center">
-            <h2 class="font-bold text-white text-2xl md:text-4xl text-center mt-4">CONTACT</h2>
-            <span class="w-12 h-1 border-b-4 border-white rounded-lg my-4"></span>
-
-            <span class="px-56 text-white font-semibold text-xl pb-12 text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-                tempora explicabo quae quod deserunt eius sapiente
-            </span>
-
-            <div class="bg-white rounded-lg m-8 p-6 w-[60%]">
-                <form action="#" class="text-lg font-semibold">
-                    <div class="pb-4 flex flex-col flex-wrap">
-                        <label class="pb-2" for="name">Name</label>
-                        <input required="" placeholder="Enter Your Name" type="text" class="bg-slate-300 p-4 rounded-md"
-                            name="name" id="name">
-                    </div>
-                    <div class="pb-4 flex flex-col flex-wrap">
-                        <label class="pb-2" for="email">Email</label>
-                        <input required="" placeholder="Enter Your Email" type="text"
-                            class="bg-slate-300 p-4 rounded-md" name="email" id="email">
-                    </div>
-                    <div class="pb-4 flex flex-col flex-wrap">
-                        <label class="pb-2" for="message">Message</label>
-                        <textarea required="" cols="30" rows="10" class="bg-slate-300 p-4 rounded-md max-h-52 h-fit"
-                            placeholder="Enter Your Message" name="message" id="message"></textarea>
-                    </div>
-                    <button type="submit"
-                        class="p-2 px-3 bg-sky-500 rounded-md text-white font-semibold hover:text-sky-600 hover:bg-sky-300">
-                        Submit
-                    </button>
-                </form>
+                <div class="services-col">
+                    <img src="Images\service3.jpg" alt="">
+                    <h3>AI & ML</h3>
+                    <p>Artificial intelligence (AI) is intelligence demonstrated by machines, unlike the natural
+                        intelligence displayed by humans and animals, which involves consciousness and emotionality. The
+                        distinction between the former and the latter categories is often revealed by the acronym
+                        chosen.</p>
+                    <a href="#">Learn More</a>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- CONTACT section ends here -->
+    </div>
+    <!-- Services Section End -->
 
-
-    <!-- Footer section starts here -->
-    <footer class="w-full bg-slate-900 text-white pt-8 flex flex-col md:flex-row flex-wrap justify-center">
-        <div class="mb-12 flex flex-col justify-center w-[80%]">
-            <div class="flex flex-col md:flex-row flex-wrap justify-between my-16">
-                <div class="">
-                    <h4 class="font-semibold text-2xl mb-8">JEET MAJUMDAR</h4>
-                    <p class="w-[500px]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-                        tempora explicabo quae quod deserunt
-                    </p>
-                </div>
-                <div class="ml-20">
-                    <h2 class="font-semibold text-2xl mb-8">
-                        <span>Social</span>
-                    </h2>
-                    <div class="flex flex-col md:flex-row flex-wrap justify-between">
-                        <a target="_blank" rel="noreferrer" href="#">
-                            <img class="w-6 mr-4" src="https://dopefolio.netlify.app/assets/png/linkedin-ico.png"
-                                alt="icon">
-                        </a>
-                        <a target="_blank" rel="noreferrer" href="#">
-                            <img class="w-6 mr-4" src="https://dopefolio.netlify.app/assets/png/github-ico.png"
-                                alt="icon">
-                        </a>
-                        <a target="_blank" rel="noreferrer" href="#">
-                            <img class="w-6 mr-4" src="https://dopefolio.netlify.app/assets/png/yt-ico.png" alt="icon">
-                        </a>
-                        <a target="_blank" rel="noreferrer" href="#">
-                            <img class="w-6 mr-4" src="https://dopefolio.netlify.app/assets/png/twitter-ico.png"
-                                alt="icon">
-                        </a>
-                        <a target="_blank" rel="noreferrer" href="#">
-                            <img class="w-6" src="https://dopefolio.netlify.app/assets/png/insta-ico.png" alt="icon">
-                        </a>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <h1>Portfolio Projects</h1>
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images\work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Project 1</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, omnis.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-
+                <div class="work">
+                    <img src="Images\work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Project 2</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, omnis.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images\work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Project 3</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, omnis.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="flex justify-center text-sm">
-                © Copyright 2023. Made by-
-                <a rel="noreferrer" target="_blank" href="#">Jeet Majumdar</a>
-            </div>
-
+            <a href="#"class="btn">See more</a>
         </div>
-    </footer>
-    <!-- Footer section ends here -->
+    </div>
+    <!-- Portfolio Section End -->
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <h1>Contact Me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fas fa-paper-plane"></i> contact@microsoft.com</p>
+                    <p><i class="fas fa-phone-square"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="Images\my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form" action="">
+                        <input type="text" name="Name" placeholder="Your Name" class="box" required>
+                        <input type="email" name="Email" placeholder="Your Email" class="box" required>
+                        <input type="text" name="Subject" placeholder="Your Subject" class="box">
+                        <textarea name="Message" id="" rows="6" placeholder="Message" class="box"></textarea>
+                        <button id="sendbtn" type="submit" class="btn btn2">Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>Copyright &copy; 2024 Jeet Majumdar | Made with <i class="fas fa-heart"></i> by Jeet Majumdar</p>
+    </div>
+    <!-- Footer Section End -->
 
 </body>
+<script src="script.js"></script>
+
 
 </html>
